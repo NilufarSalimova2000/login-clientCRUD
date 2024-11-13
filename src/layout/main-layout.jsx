@@ -6,7 +6,7 @@ import { loadState } from "../config/storege";
 export const MainLayout = () => {
     const accessToken = loadState("userData");
   if (!accessToken) {
-    return <Navigate to="/" />;
+    return <Navigate replace to="/" />;
   }
     return (
         <>

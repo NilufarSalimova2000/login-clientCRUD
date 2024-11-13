@@ -11,7 +11,7 @@ export const Login = () => {
     const submit = (data) => {
         mutate(data, {
             onSuccess: (data) => {
-                saveState("userData", JSON.stringify(data)); 
+                
                 navigate("/app"); 
             },
             onError: (err) => {

@@ -21,7 +21,7 @@ export const Clients = () => {
         <div className="container py-[30px]">
            <h1 className="font-bold text-[26px] mb-[20px]">Clients list</h1>
            <Form dataSubmit={submit} />
-           <div>
+           <div className="pt-[30px]">
             {isLoading ? (
                 <h1>Loading...</h1>
             ) : (

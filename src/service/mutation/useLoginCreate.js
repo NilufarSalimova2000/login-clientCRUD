@@ -5,8 +5,8 @@ import { saveState } from "../../config/storege";
 export const useLoginCreate = () => {
   return useMutation({
     mutationFn: (data) => request.post("/login", data).then((res) => res.data),
-    onSuccess: () => {
-      saveState("userData");
+    onSuccess: (data) => {
+      saveState("userData", data);
       
     },
     onError: () => {
